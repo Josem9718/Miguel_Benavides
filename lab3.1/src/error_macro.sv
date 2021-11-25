@@ -6,26 +6,26 @@
 generate case(``error)\
 
 	"warning" : begin\
-		$display("Warning");\
+		$warning("Warning");\
 	end\
 
 	"info" : begin\
-		$display("Info");\
+		$info("Info");\
 	end\
 
 	"error" : begin\
-		$display("error");\
+		$error("error");\
 	end\
 
 	"fatal": begin\
 		if(``error == 0)\ 
-		$display("Fatal. Finish Number: 0");\
+		$fatal("Fatal. Finish Number: 0");\
 
 		else if(``fnum == 1)\ 
-		$display("Fatal. Finish Number: 1");\
+		$fatal("Fatal. Finish Number: 1");\
 	
 		else\ 
-		$display"Fatal. Finish Number: 2");\
+		$fatal("Fatal. Finish Number: 2");\
 		end\
 
 endcase endgenerate
